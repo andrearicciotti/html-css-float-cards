@@ -17,7 +17,7 @@ body {
 h1 {
     margin: 1.6rem 0;
     color: var(--title);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bolder;
 }
 
@@ -43,5 +43,47 @@ h1 {
 }
 
 .intro {
-    font-size: 0.7rem;
+    font-size: 1rem;
+}
+
+.team {
+    margin: 1.6rem;
+}
+.columns {
+    width: calc(99% / 3);
+    display: inline-block;
+}
+
+.cards {
+    height: calc(99% / 2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEBUG */
+.container {
+    background-color: rgb(110, 131, 124);
+
+}
+
+.col-1, .col-2, .col-3, .cards {
+    border: 2px solid blue;
+    
 }
