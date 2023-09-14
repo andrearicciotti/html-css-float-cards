@@ -6,6 +6,13 @@
 }
 
 /* COMMON */
+:root {
+    --topdown-banner: #c34e70;
+    --title: #d34370;
+    --bg-card: #0f0e16;
+    --mail: #7ac4e5;
+}
+
 img {
     max-width: 100%;
 }
@@ -21,10 +28,23 @@ h1 {
     font-weight: bolder;
 }
 
-:root {
-    --topdown-banner: #c34e70;
-    --title: #d34370;
-    --bg-card: #0f0e16;
+h2 {
+    color: white;
+    font-weight: bold;
+    margin-top: 0.7rem;
+}
+
+span {
+    display: inline-block;
+}
+
+.profession {
+    color: white;
+    margin: 0.4rem 0;
+}
+
+.mail {
+    color: lightblue;
 }
 
 .container {
@@ -47,17 +67,46 @@ h1 {
 }
 
 .team {
-    margin: 1.6rem;
+    margin: 1.6rem;    
 }
+
+
+
 .columns {
-    width: calc(99% / 3);
+    width: calc(100% / 3);
+    height: 100%;
     display: inline-block;
+    float: left;
 }
 
 .cards {
-    height: calc(99% / 2);
+    width: 95%;
+    height: 50%;
+    background-color: var(--bg-card);
+    text-align: left ;
+    margin: 5rem 0;
 }
 
+.floated {
+    float: left;
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+
+}
+ .mail {
+    color: var(--mail);
+}
+
+.cards {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.bio {
+    margin-left: 7.5rem;
+}
 
 
 
@@ -83,7 +132,7 @@ h1 {
 
 }
 
-.col-1, .col-2, .col-3, .cards {
+.columns, .cards {
     border: 2px solid blue;
     
 }
