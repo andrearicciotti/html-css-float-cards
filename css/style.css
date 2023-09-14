@@ -5,7 +5,43 @@
     box-sizing: border-box;
 }
 
+/* COMMON */
+img {
+    max-width: 100%;
+}
+
 body {
     font-family: 'Fredoka', sans-serif;
-    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    margin: 1.6rem 0;
+    color: var(--title);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+:root {
+    --topdown-banner: #c34e70;
+    --title: #d34370;
+    --bg-card: #0f0e16;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.big-container::after,
+.big-container::before {
+    content:"";
+    background-color: var(--topdown-banner);
+    height: 3.5rem;
+    width: 100%;
+    display: inline-block;
+}
+
+.intro {
+    font-size: 0.7rem;
 }
