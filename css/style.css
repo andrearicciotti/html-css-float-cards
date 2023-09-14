@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-    margin: 1.6rem 0;
+    margin: 2rem 0;
     color: var(--title);
     font-size: 2rem;
     font-weight: bolder;
@@ -36,15 +36,6 @@ h2 {
 
 span {
     display: inline-block;
-}
-
-.profession {
-    color: white;
-    margin: 0.4rem 0;
-}
-
-.mail {
-    color: lightblue;
 }
 
 .container {
@@ -62,21 +53,23 @@ span {
     display: inline-block;
 }
 
+/* INTRO */
 .intro {
     font-size: 1rem;
+    margin-top: 3rem;
 }
 
 .team {
-    margin: 1.6rem;    
+    margin: 1.6rem 0;    
 }
 
-
-
+/* CARDS */
 .columns {
     width: calc(100% / 3);
     height: 100%;
     display: inline-block;
     float: left;
+    text-align: center;
 }
 
 .cards {
@@ -84,7 +77,10 @@ span {
     height: 50%;
     background-color: var(--bg-card);
     text-align: left ;
-    margin: 5rem 0;
+    margin: 5rem 0.5rem;
+    clear: both;
+    display: table;
+    content: "";
 }
 
 .floated {
@@ -94,14 +90,14 @@ span {
     width: 30%;
 
 }
- .mail {
+
+.mail {
     color: var(--mail);
 }
 
-.cards {
-    clear: both;
-    display: table;
-    content: "";
+.profession {
+    color: white;
+    margin: 0.4rem 0;
 }
 
 .bio {
@@ -127,12 +123,3 @@ span {
 
 
 /* DEBUG */
-.container {
-    background-color: rgb(110, 131, 124);
-
-}
-
-.columns, .cards {
-    border: 2px solid blue;
-    
-}
